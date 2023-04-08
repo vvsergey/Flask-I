@@ -117,14 +117,13 @@ def delete(id:int):
 def set_filter():
    args = request.args.to_dict()
    params = args.keys()
-   for quota in quotes:
-      for param in params:
-         if quota[param] == args[param]:
+   for param in params:
+         for qouta in quotes:
             pass
-        
-      
+         #не успел доделать/ додумать
+   
 
-   return args
+   return params
 
 
 
